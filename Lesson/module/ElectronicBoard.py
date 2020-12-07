@@ -1,16 +1,20 @@
 from zumi.zumi import Zumi
 from zumi.util.screen import Screen
 import time
+#import sys
+import os
+TEXT_FILE_PATH =  os.path.dirname(os.path.realpath(__file__)) + "/futura.ttf"
 
 def moving_text(direction, string, line = 25, speed = 5): 
     import Adafruit_SSD1306
     import time
-    import os
+    #import os
     from PIL import Image, ImageFont, ImageDraw
     
-    font_size = 16
-
-    TEXT_FILE_PATH = os.path.dirname(os.path.abspath('__file__')) + "/module/futura.ttf"
+    font_size = 16   
+    
+    #TEXT_FILE_PATH = os.path.dirname(os.path.abspath('__file__')) + "/module/futura.ttf"
+    #TEXT_FILE_PATH =  os.path.dirname(os.path.realpath('__file__')) + "/futura.ttf"
     disp = Adafruit_SSD1306.SSD1306_128_64(rst=24)
     
     disp.begin()
@@ -85,10 +89,17 @@ def size_text(count, size, string):
 def loop_text(direction, string ='', line = 25, font_size = 16):
     import Adafruit_SSD1306
     import time
-    import os
+    #import os
     from PIL import Image, ImageFont, ImageDraw
-
-    TEXT_FILE_PATH = os.path.dirname(os.path.abspath('__file__')) + "/module/futura.ttf"
+    
+    
+    #print(os.path.dirname(os.path.abspath('__file__')))
+    #print(os.getcwd())
+    #print(os.path.dirname(os.path.realpath(__file__)) )    
+    #print(os.path.dirname(os.path.realpath(__file__)) + "/futura.ttf")
+    #print(sys.path)
+       
+    #TEXT_FILE_PATH = os.path.dirname(os.path.abspath('__file__')) + "/module/futura.ttf"
     disp = Adafruit_SSD1306.SSD1306_128_64(rst=24)
     
     length = len(string)
@@ -153,7 +164,7 @@ def acc_text(string ='', line = 25, count = 100, font_size = 16):
         
     import Adafruit_SSD1306
     import time
-    import os
+    #import os
     from PIL import Image, ImageFont, ImageDraw
     
     length = len(string)
@@ -163,7 +174,7 @@ def acc_text(string ='', line = 25, count = 100, font_size = 16):
 
     state = 0
 
-    TEXT_FILE_PATH = os.path.dirname(os.path.abspath('__file__')) + "/module/futura.ttf"
+    #TEXT_FILE_PATH = os.path.dirname(os.path.abspath('__file__')) + "/module/futura.ttf"
     disp = Adafruit_SSD1306.SSD1306_128_64(rst=24)
 
     #print(length)

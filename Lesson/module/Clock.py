@@ -4,6 +4,7 @@ from PIL import Image, ImageFont, ImageDraw
 import os
 import math
 import time
+TEXT_FILE_PATH =  os.path.dirname(os.path.realpath(__file__)) + "/futura.ttf"
 
 class Clock():    
     
@@ -14,7 +15,7 @@ class Clock():
             
     def on_screen(self, hour, minute , string ='', font_size = 16):
         
-        TEXT_FILE_PATH = os.path.dirname(os.path.abspath('__file__')) + "/module/futura.ttf"
+        #TEXT_FILE_PATH = os.path.dirname(os.path.abspath('__file__')) + "/module/futura.ttf"
         
         #disp = Adafruit_SSD1306.SSD1306_128_64(rst=24)
 

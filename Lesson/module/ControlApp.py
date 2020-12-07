@@ -1,4 +1,4 @@
-from zumi.zumi import Zumi
+﻿from zumi.zumi import Zumi
 #from zumi.util.camera import Camera
 from zumi.util.screen import Screen
 from zumi.protocol import Note
@@ -33,7 +33,7 @@ def basic_drive_app():
     zumiAngle = 90
     zumiStep = 5
     
-    imageLocation = 'image/ch20/quickstart_guide_print.bmp'
+    imageLocation = 'image/ch20/quickstart_guide_print.jpg'
 
 
     form_item_layout = Layout(
@@ -181,7 +181,7 @@ def draw_shape_app():
     zumiAngle = 90
     zumiStep = 5
 
-    imageLocation = 'image/ch20/quickstart_guide_print.bmp'
+    imageLocation = 'image/ch20/quickstart_guide_print.jpg'
     
     form_item_layout = Layout(
         display='flex',flex_flow='row',
@@ -332,7 +332,7 @@ def draw_shape_app():
     
 def control_app():
     
-    imageLocation = 'image/ch20/quickstart_guide_print.bmp'
+    imageLocation = 'image/ch20/quickstart_guide_print.jpg'
     imageLocation2 = 'image/ch20/zumi_topview.png'
     #################################################################################
     

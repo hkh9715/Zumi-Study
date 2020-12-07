@@ -1,4 +1,4 @@
-import Adafruit_SSD1306
+﻿import Adafruit_SSD1306
 import time
 import os
 from PIL import Image, ImageFont, ImageDraw
@@ -19,7 +19,7 @@ def reading_gyro(pos =''):
     elif(pos == 'y'):
         return int(updateAngles[4])
     elif(pos == 'z'):
-        return int(updateAngles[5])
+        return int(updateAngles[2])
     else : 
         return 0
         
